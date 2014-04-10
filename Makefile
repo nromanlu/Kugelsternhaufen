@@ -12,7 +12,7 @@ all: openmp
 openmp: main.o stern.o
 	$(CC) $(CFLAGS) main.o stern.o -o KugStSim
 
-main.o: Cpp/main.cpp
+main.o: main.cpp
 	$(CC) -c $(CFLAGS) main.cpp
 
 stern.o:	stern.cpp
